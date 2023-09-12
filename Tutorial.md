@@ -4,14 +4,12 @@ Nu skal du lave en skridttæller med din @boardname@.
 * Du kan også se videoen [her](http://example.com "testvideoen") for en gennemgang af denne tutorial.
 
 ## Slet de to blå blokke
-Start med at slette de to blå blokke:
 * `||basic.når programmet starter||` 
 * `||basic.for altid||`
 
 ## Ved ryst
 Skridttælleren virker ved at registrere når @boardname@ bliver rystet. 
 * Find blokken `||input.på ryst||`  
-* Du kan få et hint ved at trykke på ledetråd knappen. 
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
@@ -19,13 +17,17 @@ input.onGesture(Gesture.Shake, function () {
 ``` 
 
 ## Tælle-variablen
-Derudover skal du oprette en variabel, til at tælle antal skridt med. Kald den `||variables:antalSkridt||`. Du behøver ikke trække den ind endnu.
+Opret en variabel, til at tælle antal skridt med. Kald den `||variables:antalSkridt||`
 
 ## Sæt tælle-variablen
-Når skridttælleren rystes, skal den tælle et skridt. Du skal altså tage variablen `||variables:antalSkridt||` og lægge 1 til. Det kan du gøre med en matematikblok, og lave regnestykket `||variables:antalSkridt||` = `||variables:antalSkridt||` + 1
+Når skridttælleren rystes, skal den tælle et skridt. Du skal altså lægge 1 til `||variables:antalSkridt||`. 
+* Find blokken `||variables: sæt||` og træk den ind i  `||input.på ryst||`    
+* Find blokken `||math:0 + 0||` og træk den ind i `||variables: sæt||` 
+* Find blokken `||variables:antalSkridt||` og træk den ind i `||variables: sæt||`
+* Udfyld så koden laver regnestykket: 
 
-* Du kan få et hint ved at trykke på ledetråd knappen. 
-
+`||variables:antalSkridt||` = `||variables:antalSkridt||` + 1
+ 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
     antalSkridt = antalSkridt + 1
@@ -33,9 +35,8 @@ input.onGesture(Gesture.Shake, function () {
 ```
 
 ## Vis antal skridt
-Find blokken `||basic.vis nummer||` og indsæt den. Indsæt variablen `||variables:antalSkridt||` i `||basic.vis nummer||`
+Find blokken `||basic.vis nummer||`. Indsæt variablen `||variables:antalSkridt||` i `||basic.vis nummer||`
 
-* Du kan få et hint ved at trykke på ledetråd knappen. 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
     antalSkridt = antalSkridt + 1
@@ -44,16 +45,17 @@ input.onGesture(Gesture.Shake, function () {
 ```
 
 ## Nulstil skridttælleren
-Det er smart at kunne nulstille skridttælleren. Til det skal vi bruge en knap. Find blokken  `||input:når der trykkes på knap A||`. 
+* Find blokken `||input:når der trykkes på knap A||`. 
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
 })
 ```
 
-
 ## Nulstil skridttælleren
-Nu skal du finde knappen til at sætte variablen `||variables:antalSkridt||`.  Bagefter sætter du `||variables:antalSkridt||` = 0
+* Find blokken `||variables: sæt||` og sæt den ind i `||input:når der trykkes på knap A||`
+* Sæt `||variables:antalSkridt||` ind i `||variables: sæt||`  
+* Sæt `||variables:antalSkridt||` = 0
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
