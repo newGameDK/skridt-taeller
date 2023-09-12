@@ -1,5 +1,5 @@
 ## Multi-tælleren
-Nu skal du lave en skridttæller med din @boardname@. 
+Nu skal du lave en multi-tæller med din @boardname@. 
 * Følg med her, så er koden klar om lidt! :-) 
 * Du kan også se videoen [her](http://example.com "testvideoen") for en gennemgang af denne tutorial.
 
@@ -65,9 +65,9 @@ input.onButtonPressed(Button.A, function () {
 
 ## Tillykke!
 Nu er du færdig med din kode. Du kan nu afprøve om du kan: 
-* Let: Tjekke om den tæller rigtigt?
-* Let: Undersøge hvor meget den skal rystes før den tæller
-* Mellem: Hvorfor tror du den ikke tæller helt rigtigt?
+* Let: Tjekke om den tæller når du ryster den?
+* Let: Undersøge hvor meget den skal rystes før den tæller?
+* Mellem: Hvis du finder tidspunkter hvor den ikke tæller, kan du så svare på hvorfor du tror det? 
 * Mellem: Prøve at sætte flere @boardname@ på den samme person, forskellige steder på kroppen
 * Svær: Bygge en holder til din @boardname@ skridttæller.
 * Svær: Finde på noget andet at bruge programmet til? Fx. hvor mange gange en dør bliver åbnet og lukket?`
