@@ -1,14 +1,16 @@
-## Rum-skridt-tæller
+## Multi-tælleren
 Nu skal du lave en skridttæller med din @boardname@. 
 * Følg med her, så er koden klar om lidt! :-) 
-* Du kan eventuelt se videoen [her](http://example.com "testvideoen") for en gennemgang af denne tutorial.
+* Du kan også se videoen [her](http://example.com "testvideoen") for en gennemgang af denne tutorial.
 
 ## Slet de to blå blokke
-Start med at slette de to blå blokke, der er på skærmen: "når programmet starter" og "for altid".
+Start med at slette de to blå blokke:
+* `||basic.når programmet starter||` 
+* `||basic.for altid||`
 
 ## Ved ryst
-Skridttælleren virker ved at registrere når @boardname@ bliver rystet. Start derfor med at finde en `||input.på ryst||` blok. 
-
+Skridttælleren virker ved at registrere når @boardname@ bliver rystet. 
+* Find blokken `||input.på ryst||`  
 * Du kan få et hint ved at trykke på ledetråd knappen. 
 
 ```blocks
