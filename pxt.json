@@ -1,5 +1,5 @@
 {
-    "name": "Skridt-tæller",
+    "name": "MultiTæller",
     "description": "",
     "dependencies": {
         "core": "*",
