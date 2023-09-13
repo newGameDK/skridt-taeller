@@ -1,6 +1,4 @@
-### @explicitHints true
-
-## Multi-tælleren {@fullscreen}
+## Multi-tælleren {@unplugged}
 Nu skal du lave en multi-tæller med din @boardname@. 
 * Følg med her, så er koden klar om lidt! :-) 
 * Du kan også se videoen [her](http://example.com "testvideoen") for en gennemgang af denne tutorial.
