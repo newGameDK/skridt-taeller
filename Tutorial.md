@@ -2,6 +2,7 @@
 Nu skal du lave en multi-tæller med din @boardname@. 
 * Følg med her, så er koden klar om lidt! :-) 
 * Du kan også se videoen [her](http://example.com "testvideoen") for en gennemgang af denne tutorial.
+~hint This content is hidden until the user clicks here.
 
 ## Slet de to blå blokke
 * `||basic.når programmet starter||` 
