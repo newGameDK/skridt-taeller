@@ -12,6 +12,7 @@ Nu skal du lave en multi-tæller med din @boardname@.
 ## Ved ryst
 Skridttælleren virker ved at registrere når @boardname@ bliver rystet. 
 * Find blokken `||input.på ryst||`  
+TIP: Tryk direkte på den farvede tekst `||input.på ryst||` 
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
