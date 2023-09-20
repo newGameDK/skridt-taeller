@@ -1,6 +1,6 @@
-
 ## Multi-tælleren @unplugged
-Nu skal du lave en multi-tæller med din @boardname@. 
+![Image Description](https://newgamedk.github.io/skridt-taeller/intro.png)
+![Image Description](https://newgamedk.github.io/skridt-taeller/help.png)
 
 ## Slet blokkene
 * `||basic.når programmet starter||` 
