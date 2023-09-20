@@ -1,5 +1,6 @@
 ## Multi-tælleren @unplugged
 ![Image Description](https://newgamedk.github.io/skridt-taeller/intro.png)
+
 ## Slet blokkene
 * `||basic.når programmet starter||` 
 * `||basic.for altid||`
