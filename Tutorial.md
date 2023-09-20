@@ -15,7 +15,7 @@ input.onGesture(Gesture.Shake, function () {
 ``` 
 
 ## Tælle-variablen
-Opret en variabel, til at tælle antalRyst skridt med. Kald den `||variables:antalRyst||`
+Opret en variabel, til at tælle antalRyst skridt med. Kald den `||variables:antalRyst||`.
 
 ## Sæt tælle-variablen
 Når multi:tælleren rystes, skal den tælle et skridt. Du skal altså lægge 1 til `||variables:antalRyst||`. 
