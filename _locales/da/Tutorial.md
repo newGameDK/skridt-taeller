@@ -1,15 +1,13 @@
-## Multi-tælleren {@unplugged}
+## Multi-tælleren @unplugged
 ![Image Description](https://newgamedk.github.io/skridt-taeller/intro.png)
-![Image Description](https://newgamedk.github.io/skridt-taeller/help.png)
 
-## Slet de to blå blokke
+## Slet blokkene
 * `||basic.når programmet starter||` 
 * `||basic.for altid||`
 
 ## Ved ryst
-Skridttælleren virker ved at registrere når @boardname@ bliver rystet. 
-* Find blokken `||input.på ryst||`  
-TIP: Tryk direkte på den farvede tekst `||input.på ryst||` 
+* Find blokken `||input.på ryst||`. 
+* ** Find blok i menuen ved at trykke på --> ** `||input.på ryst||`
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
@@ -17,34 +15,35 @@ input.onGesture(Gesture.Shake, function () {
 ``` 
 
 ## Tælle-variablen
-Opret en variabel, til at tælle antal skridt med. Kald den `||variables:antalSkridt||`
+Opret en variabel, til at tælle antalRyst skridt med. Kald den `||variables:antalRyst||`.
 
 ## Sæt tælle-variablen
-Når skridttælleren rystes, skal den tælle et skridt. Du skal altså lægge 1 til `||variables:antalSkridt||`. 
+Når multi:tælleren rystes, skal den tælle et skridt. Du skal altså lægge 1 til `||variables:antalRyst||`. 
 * Find blokken `||variables: sæt||` og træk den ind i  `||input.på ryst||`    
 * Find blokken `||math:0 + 0||` og træk den ind i `||variables: sæt||` 
-* Find blokken `||variables:antalSkridt||` og træk den ind i `||variables: sæt||`
+* Find blokken `||variables:antalRyst||` og træk den ind i `||variables: sæt||`
 * Udfyld så koden laver regnestykket: 
 
-`||variables:antalSkridt||` = `||variables:antalSkridt||` + 1
+`||variables:antalRyst||` = `||variables:antalRyst||` + 1
  
 ```blocks
 input.onGesture(Gesture.Shake, function () {
-    antalSkridt = antalSkridt + 1
+    antalRyst = antalRyst + 1
 })
 ```
 
-## Vis antal skridt
-Find blokken `||basic.vis nummer||`. Indsæt variablen `||variables:antalSkridt||` i `||basic.vis nummer||`
+## Vis talte ryst
+Find blokken `||basic.vis nummer||`. Indsæt variablen `||variables:antalRyst||` i `||basic.vis nummer||`
+* ** Tip til bloksamling: ** Tryk på den lilla pære 
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
-    antalSkridt = antalSkridt + 1
-    basic.showNumber(antalSkridt)
+    antalRyst = antalRyst + 1
+    basic.showNumber(antalRyst)
 })
 ```
 
-## Nulstil skridttælleren
+## Nulstil multi:tælleren
 * Find blokken `||input:når der trykkes på knap A||`. 
 
 ```blocks
@@ -52,14 +51,13 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Nulstil skridttælleren
+## Nulstil multi:tælleren
 * Find blokken `||variables: sæt||` og sæt den ind i `||input:når der trykkes på knap A||`
-* Sæt `||variables:antalSkridt||` ind i `||variables: sæt||`  
-* Sæt `||variables:antalSkridt||` = 0
+* Sæt `||variables:antalRyst||` = 0
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    antalSkridt = 0
+    antalRyst = 0
 })
 ```
 
@@ -69,6 +67,6 @@ Nu er du færdig med din kode. Du kan nu afprøve om du kan:
 * Let: Undersøge hvor meget den skal rystes før den tæller?
 * Mellem: Hvis du finder tidspunkter hvor den ikke tæller, kan du så svare på hvorfor du tror det? 
 * Mellem: Prøve at sætte flere @boardname@ på den samme person, forskellige steder på kroppen
-* Svær: Bygge en holder til din @boardname@ skridttæller.
-* Svær: Finde på noget andet at bruge programmet til? Fx. hvor mange gange en dør bliver åbnet og lukket?`
+* Svær: Bygge en holder til din @boardname@ multi:tæller.
+* Svær: Finde på noget andet at bruge programmet til? Fx. hvor mange gange en dør bliver åbnet og lukket?
 * Svær: Tænk over om der mon er noget sted på rumstationen hvor den virker?
